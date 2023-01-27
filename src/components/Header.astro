@@ -1,50 +1,68 @@
-<header
-  class="flex items-center justify-between py-6 px-5 top-0 sticky bg-white z-10"
->
-  <a href="#">
-    <img
-      src="https://vanillaos.org/assets/images/vanilla-logo.png"
-      alt="Vanilla OS logo"
-      class="w-32"
-    />
-  </a>
-  <button
-    id="menuIcon"
-    aria-label="menu"
-    class="grid gap-[2px] justify-center w-5 h-full"
-  >
-    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
-    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
-    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
-  </button>
-  <nav
-    id="menu"
-    class="hidden fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md bg-white"
-  >
-    <ul class="grid justify-items-center gap-3 text-lg">
-      <li>
-        <a href="#">Blog</a>
-      </li>
-      <li>
-        <a href="#">FAQ</a>
-      </li>
-      <li>
-        <a href="#">Community</a>
-      </li>
-      <li>
-        <a href="#">Documentation</a>
-      </li>
-      <li>
-        <a href="#">Handbook</a>
-      </li>
-      <li>
-        <a href="#">Get Involved</a>
-      </li>
-      <li>
-        <a href="#">[rss]</a>
-      </li>
-    </ul>
-  </nav>
+<header class="py-6 top-0 sticky bg-white z-10">
+  <div class="flex items-center justify-between px-5 container mx-auto">
+    <a href="#">
+      <img
+        src="https://vanillaos.org/assets/images/vanilla-logo.png"
+        alt="Vanilla OS logo"
+        class="w-32"
+      />
+    </a>
+    <button
+      id="menuIcon"
+      aria-label="menu"
+      class="grid gap-[2px] justify-center w-5 h-full lg:hidden"
+    >
+      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+    </button>
+    <nav
+      id="menu"
+      class="hidden lg:grid lg:relative lg:top-0 lg:left-0 lg:right-0 fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md lg:drop-shadow-none bg-white lg:bg-none"
+    >
+      <ul
+        class="grid lg:grid-flow-col justify-items-center gap-3 lg:gap-7 text-lg"
+      >
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Community</a>
+        </li>
+        <li>
+          <a href="#">Documentation</a>
+        </li>
+        <li>
+          <a href="#">Handbook</a>
+        </li>
+        <li>
+          <a href="#">Get Involved</a>
+        </li>
+        <li>
+          <a href="#">
+            <svg
+              width="24px"
+              height="24px"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="currentColor"
+              ><path
+                d="M12 19c0-4.2-2.8-7-7-7M19 19c0-8.4-5.6-14-14-14M5 19.01l.01-.011"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            >
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <script client:load>
