@@ -1,0 +1,368 @@
+---
+import Faq from "../components/Faq.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Vanilla OS">
+  <main>
+    <section
+      class="grid justify-items-center gap-3 py-16 px-5 h-[calc(100vh-100px)] place-content-center"
+    >
+      <img
+        src="https://vanillaos.org/assets/images/home-laptop.svg"
+        alt="Laptop Vanilla OS"
+        class="max-h-[50vh]"
+      />
+      <a
+        href="#"
+        class="bg-black font-medium text-white py-3 px-6 rounded-full text-xl flex items-center gap-2"
+      >
+        Get Vanilla OS 22.10
+        <span>
+          <svg
+            width="24px"
+            height="24px"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="currentColor"
+            ><path
+              d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </span>
+      </a>
+      <div>
+        <a href="#" class="border-b border-dotted border-[#282828]">Roadmap</a>
+        |
+        <a href="#" class="border-b border-dotted border-[#282828]"
+          >Requirements</a
+        >
+      </div>
+      <a href="#" class="grid gap-3 justify-items-center text-2xl mt-[5vh]">
+        What is Vanilla OS?
+        <span>
+          <svg
+            width="24px"
+            height="24px"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+            ><path
+              d="M12.25 5.5V18m0 0l-6-6m6 6l6-6"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </span>
+      </a>
+    </section>
+
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Nicely Updated.</h2>
+      <p class="text-xl">
+        Designed to last over time and always be faithful to you.
+      </p>
+      <p class="text-xl">
+        Vanilla OS is an Ubuntu Linux-based Point Release distribution that
+        receives updates at the right time, neither before nor after, without
+        sacrificing security and functionality.
+      </p>
+    </section>
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Work.</h2>
+      <p class="text-xl">Your faithful colleague by day.</p>
+      <p class="text-xl">
+        Vanilla OS is designed to be a reliable and productive operating system
+        for your daily work. The GNOME Desktop is the perfect environment for
+        your daily tasks, with a clean and intuitive interface, everything is at
+        your fingertips.
+      </p>
+      <p class="text-xl">
+        Thanks to a wide range of applications, Vanilla OS is ready to meet your
+        needs, whether you are a developer, a designer, a student or a simple
+        user.
+      </p>
+      <img
+        src="https://vanillaos.org/assets/images/home-rnote.png"
+        alt="Rnote Flatpak App"
+      />
+    </section>
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Play.</h2>
+      <p class="text-xl">Your teammate by night.</p>
+      <p class="text-xl">
+        Play your favourite video games without worrying about setting up your
+        devices. Vanilla OS offers the latest stable Linux kernel, ensuring
+        support for the latest devices and the latest performance improvements.
+      </p>
+      <p class="text-xl">
+        Thanks to an integrated driver manager, your GPU will no longer be a
+        problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just
+        open the driver manager and follow the suggestions, it's that simple.
+      </p>
+      <img
+        src="https://vanillaos.org/assets/images/home-gaming.png"
+        alt="Games pic"
+      />
+    </section>
+    <!--  -->
+    <section
+      class="grid place-items-center gap-4 text-center px-5 py-16 relative"
+    >
+      <img
+        src="https://vanillaos.org/assets/images/home-apps.png"
+        alt="Apps linux"
+        class="opacity-50"
+      />
+      <div class="absolute">
+        <h2 class="text-5xl font-bold">Complete.</h2>
+        <p class="text-xl">Acces a large catologue of applications.</p>
+      </div>
+    </section>
+    <!--  -->
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Choice.</h2>
+      <p class="text-xl">Your system, your choices.</p>
+      <p class="text-xl">
+        Vanilla OS is an operating system that respects your choices, you are in
+        control, always.
+      </p>
+      <p class="text-xl">
+        At the first start you can choose which package format to use in Vanilla
+        OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take
+        care of the rest, putting you in the situation to start without
+        problems.
+      </p>
+      <img
+        src="https://vanillaos.org/assets/images/home-pkgs.png"
+        alt="Packages format pic"
+      />
+    </section>
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Immutable...</h2>
+      <p class="text-xl">..but also not.</p>
+      <p class="text-xl">
+        Vanilla OS is an immutable operating system, core parts of the system
+        are locked down to prevent unwanted changes and corruption from
+        third-party applications or a faulty update. Some paths are still
+        writable, such as the home and configurations directories, this allows
+        the user to keep their files and ensure the normal functioning of
+        applications.
+      </p>
+      <p class="text-xl">
+        Core components are only updated via controlled and atomic transactions,
+        which are applied only on success and made available on reboot.
+      </p>
+      <p class="text-xl">
+        Need to install a component in the core system? No problem, you can open
+        a transactional shell at any time, make your changes and let the system
+        apply them automatically!
+      </p>
+      <a
+        class="font-medium bg-black text-white w-fit mx-auto py-3 px-6 rounded-full flex items-center gap-2"
+        href="#"
+        >Learn More
+        <span>
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="currentColor"
+            ><path
+              d="M13 6l6 6-6 6M5 6l6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </span>
+      </a>
+      <img
+        src="https://vanillaos.org/assets/images/home-desk-apx.svg"
+        alt="Apx preview"
+      />
+    </section>
+    <section class="grid gap-4 text-center px-5 py-16">
+      <h2 class="text-5xl font-bold">Free & Open Source.</h2>
+      <p class="text-xl">You don't have to and you will never have to pay.</p>
+      <p class="text-xl">
+        Vanilla OS is built on free and Open Source technologies and software
+        and does not require any payment to be used, it is simply already yours.
+      </p>
+      <p class="text-xl">
+        All system components are released under Open Source licenses and the
+        code is available for your review, contribution or forking.
+      </p>
+      <a
+        class="bg-black rounded-full font-medium text-white py-3 px-6 w-fit mx-auto flex items-center gap-2"
+        href="#"
+      >
+        Fork on
+        <span>
+          <svg
+            width="24px"
+            height="24px"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="currentColor"
+            ><path
+              d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path></svg
+          >
+        </span>
+        GitHub
+      </a>
+    </section>
+
+    <Faq />
+
+    <div class="py-16">
+      <section class="grid justify-items-center gap-8 px-5">
+        <h2 class="text-5xl font-bold">Technologies</h2>
+        <p class="text-xl text-center">
+          Vanilla OS is made possible by the following technologies.
+        </p>
+        <div>
+          <ul class="grid place-items-center grid-cols-2 gap-5">
+            <li class="shadow-md drop-shadow-md p-3">
+              <a href="#">
+                <img
+                  src="https://vanillaos.org/assets/images/logos/ubuntu.svg"
+                  alt=""
+                  class="w-32"
+                />
+              </a>
+            </li>
+            <li class="shadow-md drop-shadow-md p-3">
+              <a href="#">
+                <img
+                  src="https://vanillaos.org/assets/images/logos/gnome.svg"
+                  alt=""
+                  class="w-32"
+                />
+              </a>
+            </li>
+            <li
+              class="shadow-md drop-shadow-md p-3 h-full grid place-content-center"
+            >
+              <a href="#">
+                <img
+                  src="https://vanillaos.org/assets/images/logos/distrobox.png"
+                  alt=""
+                  class="w-32"
+                />
+              </a>
+            </li>
+            <li class="shadow-md drop-shadow-md p-3">
+              <a href="#">
+                <img
+                  src="https://vanillaos.org/assets/images/logos/abroot.svg"
+                  alt=""
+                  class="w-32"
+                />
+              </a>
+            </li>
+            <li class="shadow-md drop-shadow-md p-3">
+              <a href="#">
+                <img
+                  src="https://vanillaos.org/assets/images/logos/apx.png"
+                  alt=""
+                  class="w-32"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <small class="text-center"
+          >All trademark are the property of their respective owners.</small
+        >
+      </section>
+    </div>
+
+    <section class="py-16">
+      <div class="grid gap-16">
+        <article class="">
+          <a href="#" class="grid text-center gap-3 px-5">
+            <img
+              src="https://vanillaos.org/assets/images/logos/media/zdnet.svg"
+              alt=""
+              class="h-8 max-w-full mx-auto saturate-0"
+            />
+            <p class="text-xl">
+              If you're looking for a new operating system that takes security
+              seriously… Vanilla OS might be just the ticket.
+            </p>
+          </a>
+        </article>
+        <article class="">
+          <a href="#" class="grid text-center gap-3 px-5">
+            <img
+              src="https://vanillaos.org/assets/images/logos/media/the_register.svg"
+              alt=""
+              class="h-8 max-w-full mx-auto saturate-0"
+            />
+            <p class="text-xl">
+              Vanilla OS is going for bigger, bolder improvement to the Linux
+              desktop… it could prove transformative to the Linux industry…
+            </p>
+          </a>
+        </article>
+        <article class="">
+          <a href="#" class="grid text-center gap-3 px-5">
+            <img
+              src="https://vanillaos.org/assets/images/logos/media/techrepublic-logo.svg"
+              alt=""
+              class="h-8 max-w-full mx-auto saturate-0"
+            />
+            <p class="text-xl">
+              This will be a project you’ll want to keep a close watch on… I
+              think Vanilla OS could be a real game-changer.
+            </p>
+          </a>
+        </article>
+        <article class="">
+          <a href="#" class="grid text-center gap-3 px-5">
+            <img
+              src="https://vanillaos.org/assets/images/logos/media/omg-linux.png"
+              alt=""
+              class="h-8 max-w-full mx-auto saturate-0"
+            />
+            <p class="text-xl">
+              Far more than “just another” Ubuntu fork, this distro takes a bold
+              new approach to desktop computing using an immutable file system.
+            </p>
+          </a>
+        </article>
+        <article class="">
+          <a href="#" class="grid text-center gap-3 px-5">
+            <img
+              src="https://vanillaos.org/assets/images/logos/media/itsfoss-logo.webp"
+              alt=""
+              class="h-8 max-w-full mx-auto saturate-0"
+            />
+            <p class="text-xl">
+              Being a new distro, Vanilla OS has a well-equipped feature set
+              that you might like.
+            </p>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+</Layout>

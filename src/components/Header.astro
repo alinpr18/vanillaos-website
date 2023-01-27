@@ -1,0 +1,56 @@
+<header
+  class="flex items-center justify-between py-6 px-5 top-0 sticky bg-white z-10"
+>
+  <a href="#">
+    <img
+      src="https://vanillaos.org/assets/images/vanilla-logo.png"
+      alt="Vanilla OS logo"
+      class="w-32"
+    />
+  </a>
+  <button
+    id="menuIcon"
+    aria-label="menu"
+    class="grid gap-[2px] justify-center w-5 h-full"
+  >
+    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+    <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+  </button>
+  <nav
+    id="menu"
+    class="hidden fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md bg-white"
+  >
+    <ul class="grid justify-items-center gap-3 text-lg">
+      <li>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="#">Community</a>
+      </li>
+      <li>
+        <a href="#">Documentation</a>
+      </li>
+      <li>
+        <a href="#">Handbook</a>
+      </li>
+      <li>
+        <a href="#">Get Involved</a>
+      </li>
+      <li>
+        <a href="#">[rss]</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script client:load>
+  const $menuIcon = document.querySelector("#menuIcon");
+  const $menu = document.querySelector("#menu");
+  $menuIcon.addEventListener("click", () => {
+    $menu.classList.toggle("hidden");
+  });
+</script>
