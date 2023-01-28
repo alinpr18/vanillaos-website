@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Faq from "../components/Faq.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -94,10 +95,13 @@ import Layout from "../layouts/Layout.astro";
           simple user.
         </p>
       </div>
-      <img
+      <Image
         src="https://vanillaos.org/assets/images/home-rnote.png"
+        width={1747}
+        height={1211}
         alt="Rnote Flatpak App"
-        class="m-auto"
+        format="webp"
+        class="m-auto w-full"
       />
     </section>
     <section
@@ -118,19 +122,26 @@ import Layout from "../layouts/Layout.astro";
           open the driver manager and follow the suggestions, it's that simple.
         </p>
       </div>
-      <img
+      <Image
         src="https://vanillaos.org/assets/images/home-gaming.png"
+        width={1750}
+        height={1365}
         alt="Games pic"
+        format="webp"
+        class="m-auto"
       />
     </section>
     <!--  -->
     <section
       class="grid place-items-center gap-4 text-center px-5 py-16 relative"
     >
-      <img
+      <Image
         src="https://vanillaos.org/assets/images/home-apps.png"
-        alt="Apps linux"
+        format="webp"
+        alt="Apps Linux"
         class="opacity-50"
+        width={1748}
+        height={1559}
       />
       <div class="absolute">
         <div class="grid gap-4">
@@ -159,8 +170,11 @@ import Layout from "../layouts/Layout.astro";
           without problems.
         </p>
       </div>
-      <img
+      <Image
         src="https://vanillaos.org/assets/images/home-pkgs.png"
+        width={440}
+        height={537}
+        format="webp"
         alt="Packages format pic"
         class="m-auto"
       />
@@ -212,6 +226,7 @@ import Layout from "../layouts/Layout.astro";
           </span>
         </a>
       </div>
+      <!-- <Image src={} /> -->
       <img
         src="https://vanillaos.org/assets/images/home-desk-apx.svg"
         alt="Apx preview"
@@ -301,9 +316,12 @@ import Layout from "../layouts/Layout.astro";
             </li>
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
               <a href="#">
-                <img
+                <Image
                   src="https://vanillaos.org/assets/images/logos/distrobox.png"
-                  alt=""
+                  width={1800}
+                  height={235}
+                  format="webp"
+                  alt="Distrobox logo"
                   class="w-32 h-14 object-contain"
                 />
               </a>
@@ -319,9 +337,12 @@ import Layout from "../layouts/Layout.astro";
             </li>
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
               <a href="#">
-                <img
+                <Image
                   src="https://vanillaos.org/assets/images/logos/apx.png"
-                  alt=""
+                  width={1800}
+                  height={235}
+                  format="webp"
+                  alt="Apx logo"
                   class="w-32 h-14 object-contain"
                 />
               </a>
@@ -377,10 +398,13 @@ import Layout from "../layouts/Layout.astro";
         </article>
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
-            <img
+            <Image
               src="https://vanillaos.org/assets/images/logos/media/omg-linux.png"
-              alt=""
-              class="h-8 max-w-full mx-auto saturate-0"
+              alt="OMG! Linux"
+              width={498}
+              height={110}
+              format="webp"
+              class="h-8 w-auto mx-auto saturate-0"
             />
             <p class="text-xl">
               Far more than “just another” Ubuntu fork, this distro takes a bold
@@ -390,10 +414,13 @@ import Layout from "../layouts/Layout.astro";
         </article>
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
-            <img
+            <Image
               src="https://vanillaos.org/assets/images/logos/media/itsfoss-logo.webp"
-              alt=""
-              class="h-8 max-w-full mx-auto saturate-0"
+              alt="It's Foss"
+              width={300}
+              height={108}
+              format="webp"
+              class="h-8 w-auto mx-auto saturate-0"
             />
             <p class="text-xl">
               Being a new distro, Vanilla OS has a well-equipped feature set
