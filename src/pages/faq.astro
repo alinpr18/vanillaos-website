@@ -1,0 +1,21 @@
+---
+import Faq from "../components/Faq.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Vanilla OS FAQ">
+  <main>
+    <section class="bg-[#F2F1ED]">
+      <div class="grid gap-4 text-center px-5 py-16">
+        <h1 class="text-5xl font-bold lg:text-7xl">FAQ</h1>
+        <p class="text-xl lg:text-2xl">
+          Frequently Answred Asked Questions about Vanilla OS.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 grid gap-5 container mx-auto">
+      <Faq />
+    </section>
+  </main>
+</Layout>
