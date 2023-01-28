@@ -10,9 +10,11 @@ import Layout from "../layouts/Layout.astro";
       class="grid justify-items-center gap-3 py-16 px-5 h-[calc(100vh-100px)] place-content-center"
     >
       <img
-        src="https://vanillaos.org/assets/images/home-laptop.svg"
-        alt="Laptop Vanilla OS"
-        class="max-h-[50vh]"
+        src="/images/home-laptop.svg"
+        width={660}
+        height={350}
+        alt="Laptop with VanillaOS"
+        loading="lazy"
       />
       <a
         href="#"
@@ -96,9 +98,9 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="https://vanillaos.org/assets/images/home-rnote.png"
-        width={1747}
-        height={1211}
+        src="/images/home-rnote.png"
+        width={612}
+        height={425}
         alt="Rnote Flatpak App"
         format="webp"
         class="m-auto w-full"
@@ -123,22 +125,21 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="https://vanillaos.org/assets/images/home-gaming.png"
-        width={1750}
-        height={1365}
+        src="/images/home-gaming.png"
+        width={612}
+        height={425}
         alt="Games pic"
         format="webp"
         class="m-auto"
       />
     </section>
-    <!--  -->
     <section
       class="grid place-items-center gap-4 text-center px-5 py-16 relative"
     >
       <Image
-        src="https://vanillaos.org/assets/images/home-apps.png"
+        src="/images/home-apps.png"
         format="webp"
-        alt="Apps Linux"
+        alt="Linux Apps"
         class="opacity-50"
         width={1748}
         height={1559}
@@ -152,7 +153,6 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </section>
-    <!--  -->
     <section
       class="grid gap-4 text-center px-5 py-16 lg:grid-cols-2 lg:items-start container mx-auto"
     >
@@ -171,7 +171,7 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="https://vanillaos.org/assets/images/home-pkgs.png"
+        src="/images/home-pkgs.png"
         width={440}
         height={537}
         format="webp"
@@ -226,11 +226,13 @@ import Layout from "../layouts/Layout.astro";
           </span>
         </a>
       </div>
-      <!-- <Image src={} /> -->
       <img
-        src="https://vanillaos.org/assets/images/home-desk-apx.svg"
+        src="/images/home-desk-apx.svg"
+        width={612}
+        height={425}
         alt="Apx preview"
         class="m-auto"
+        loading="lazy"
       />
     </section>
     <section
@@ -297,53 +299,61 @@ import Layout from "../layouts/Layout.astro";
             class="grid place-items-center grid-cols-2 gap-5 container mx-auto lg:grid-flow-col"
           >
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
+              <a aria-label="Ubuntu" href="#">
+                <img
+                  src="/logos/ubuntu.svg"
+                  alt="Ubuntu"
+                  width={128}
+                  height={56}
+                  loading="lazy"
+                />
+              </a>
+            </li>
+            <li
+              aria-label="Gnome"
+              class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]"
+            >
               <a href="#">
                 <img
-                  src="https://vanillaos.org/assets/images/logos/ubuntu.svg"
-                  alt=""
+                  src="/logos/gnome.svg"
+                  alt="Gnome"
+                  width={128}
+                  height={56}
                   class="w-32 h-14 object-contain"
+                  loading="lazy"
                 />
               </a>
             </li>
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
-              <a href="#">
-                <img
-                  src="https://vanillaos.org/assets/images/logos/gnome.svg"
-                  alt=""
-                  class="w-32 h-14 object-contain"
-                />
-              </a>
-            </li>
-            <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
-              <a href="#">
+              <a aria-label="Distrobox" href="#">
                 <Image
-                  src="https://vanillaos.org/assets/images/logos/distrobox.png"
-                  width={1800}
-                  height={235}
+                  src="/logos/distrobox.png"
+                  width={128}
+                  height={56}
                   format="webp"
-                  alt="Distrobox logo"
-                  class="w-32 h-14 object-contain"
+                  alt="Distrobox"
                 />
               </a>
             </li>
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
-              <a href="#">
+              <a aria-label="ABRoot" href="#">
                 <img
-                  src="https://vanillaos.org/assets/images/logos/abroot.svg"
-                  alt=""
-                  class="w-32 h-14 object-contain"
+                  src="/logos/abroot.svg"
+                  alt="ABRoot"
+                  width={128}
+                  height={56}
+                  loading="lazy"
                 />
               </a>
             </li>
             <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
-              <a href="#">
+              <a aria-label="Apx" href="#">
                 <Image
-                  src="https://vanillaos.org/assets/images/logos/apx.png"
-                  width={1800}
-                  height={235}
+                  src="/logos/apx.png"
+                  width={128}
+                  height={56}
                   format="webp"
-                  alt="Apx logo"
-                  class="w-32 h-14 object-contain"
+                  alt="Apx"
                 />
               </a>
             </li>
@@ -360,8 +370,10 @@ import Layout from "../layouts/Layout.astro";
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
             <img
-              src="https://vanillaos.org/assets/images/logos/media/zdnet.svg"
-              alt=""
+              src="/logos/media/zdnet.svg"
+              alt="Zdnet"
+              width={1000}
+              height={655}
               class="h-8 max-w-full mx-auto saturate-0"
             />
             <p class="text-xl">
@@ -373,8 +385,10 @@ import Layout from "../layouts/Layout.astro";
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
             <img
-              src="https://vanillaos.org/assets/images/logos/media/the_register.svg"
-              alt=""
+              src="/logos/media/the_register.svg"
+              width={425}
+              height={79}
+              alt="The Register"
               class="h-8 max-w-full mx-auto saturate-0"
             />
             <p class="text-xl">
@@ -386,8 +400,10 @@ import Layout from "../layouts/Layout.astro";
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
             <img
-              src="https://vanillaos.org/assets/images/logos/media/techrepublic-logo.svg"
-              alt=""
+              src="/logos/media/techrepublic-logo.svg"
+              alt="TechRepublic"
+              width={750}
+              height={171}
               class="h-8 max-w-full mx-auto saturate-0"
             />
             <p class="text-xl">
@@ -399,7 +415,7 @@ import Layout from "../layouts/Layout.astro";
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
             <Image
-              src="https://vanillaos.org/assets/images/logos/media/omg-linux.png"
+              src="/logos/media/omg-linux.png"
               alt="OMG! Linux"
               width={498}
               height={110}
@@ -415,7 +431,7 @@ import Layout from "../layouts/Layout.astro";
         <article>
           <a href="#" class="grid text-center gap-3 px-5">
             <Image
-              src="https://vanillaos.org/assets/images/logos/media/itsfoss-logo.webp"
+              src="/logos/media/itsfoss-logo.webp"
               alt="It's Foss"
               width={300}
               height={108}
