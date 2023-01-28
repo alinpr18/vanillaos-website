@@ -1,9 +1,42 @@
+---
+import { Image } from "@astrojs/image/components";
+const navbar = [
+  {
+    title: "Blog",
+    href: "/blog",
+  },
+  {
+    title: "FAQ",
+    href: "/faq",
+  },
+  {
+    title: "Community",
+    href: "#",
+  },
+  {
+    title: "Documentation",
+    href: "#",
+  },
+  {
+    title: "Handbook",
+    href: "#",
+  },
+  {
+    title: "Get Involved",
+    href: "/get-involved",
+  },
+];
+---
+
 <header class="py-6 top-0 sticky bg-white z-10">
   <div class="flex items-center justify-between px-5 container mx-auto">
     <a href="/">
-      <img
+      <Image
         src="https://vanillaos.org/assets/images/vanilla-logo.png"
-        alt="Vanilla OS logo"
+        width={248}
+        height={87}
+        alt="VanillaOS logo"
+        format="webp"
         class="w-32"
       />
     </a>
@@ -23,43 +56,16 @@
       <ul
         class="grid lg:grid-flow-col justify-items-center gap-3 lg:gap-7 text-lg"
       >
-        <li>
-          <a href="/blog">Blog</a>
-        </li>
-        <li>
-          <a href="/faq">FAQ</a>
-        </li>
-        <li>
-          <a href="#">Community</a>
-        </li>
-        <li>
-          <a href="#">Documentation</a>
-        </li>
-        <li>
-          <a href="#">Handbook</a>
-        </li>
-        <li>
-          <a href="/get-involved">Get Involved</a>
-        </li>
-        <li>
-          <a href="#">
-            <svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="currentColor"
-              ><path
-                d="M12 19c0-4.2-2.8-7-7-7M19 19c0-8.4-5.6-14-14-14M5 19.01l.01-.011"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path></svg
-            >
-          </a>
-        </li>
+        {
+          navbar.map((page) => {
+            const { title, href } = page;
+            return (
+              <li>
+                <a href={href}>{title}</a>
+              </li>
+            );
+          })
+        }
       </ul>
     </nav>
   </div>
