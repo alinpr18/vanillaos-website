@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const articles = [
+  {
+    title: "Why we switched from Almost to ABRoot",
+    date: "Sat, Jan 28, 2023",
+    content:
+      "If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, Almost and ABRoot, that we’ve used to achieve...",
+  },
+  {
+    title: "Why we switched from Almost to ABRoot",
+    date: "Sat, Jan 28, 2023",
+    content:
+      "If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, Almost and ABRoot, that we’ve used to achieve...",
+  },
+  {
+    title: "Why we switched from Almost to ABRoot",
+    date: "Sat, Jan 28, 2023",
+    content:
+      "If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, Almost and ABRoot, that we’ve used to achieve...",
+  },
+  {
+    title: "Why we switched from Almost to ABRoot",
+    date: "Sat, Jan 28, 2023",
+    content:
+      "If you’ve been following the Vanilla OS project from the start, you’ll notice that our plans for immutability have changed. We’ve developed two technologies, Almost and ABRoot, that we’ve used to achieve...",
+  },
+];
+---
+
+<Layout title="Vanilla OS Blog">
+  <main>
+    <section class="bg-[#F2F1ED]">
+      <div class="grid gap-4 text-center px-5 py-16">
+        <h1 class="text-5xl font-bold lg:text-7xl">Blog</h1>
+        <p class="text-xl lg:text-2xl">
+          Check out what's happening in Vanilla OS world.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
+      {
+        articles.map((article) => {
+          const { title, date, content } = article;
+          return (
+            <div class="px-5 lg:px-0">
+              <article class="bg-[#F2F1ED] rounded-xl p-5">
+                <h2 class="text-3xl font-bold">{title}</h2>
+                <time>{date}</time>
+                <p class="text-lg my-4">{content}</p>
+                <button class="bg-black rounded-full py-3 px-6 text-white">
+                  Read more [arrow]
+                </button>
+              </article>
+            </div>
+          );
+        })
+      }
+    </section>
+  </main>
+</Layout>
