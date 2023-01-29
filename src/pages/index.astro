@@ -22,8 +22,8 @@ const homeDeskApx = "/images/home-desk-apx.png";
       <Image
         src={homeLatop}
         format="webp"
-        width={650}
-        height={350}
+        width={750}
+        height={403}
         alt="Laptop with Vanilla OS"
       />
       <a
@@ -255,7 +255,9 @@ const homeDeskApx = "/images/home-desk-apx.png";
           Vanilla OS is made possible by the following technologies.
         </p>
         <div>
-          <ul class="grid grid-cols-2 lg:grid-flow-col gap-5 container mx-auto">
+          <ul
+            class="grid grid-cols-2 md:auto-cols-fr md:grid-cols-5 gap-5 container mx-auto"
+          >
             <li class="p-3 hover:bg-[#f1f0ec] rounded">
               <a
                 aria-label="Ubuntu"
@@ -336,7 +338,9 @@ const homeDeskApx = "/images/home-desk-apx.png";
     </div>
 
     <section class="py-16">
-      <div class="grid gap-16 container mx-auto lg:grid-cols-3">
+      <div
+        class="grid gap-16 container justify-center mx-auto md:grid-cols-2 lg:grid-cols-3"
+      >
         <Technologie />
       </div>
     </section>
