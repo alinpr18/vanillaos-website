@@ -1,6 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Faq from "../components/Faq.astro";
+import Technologie from "../components/Technologie.astro";
 import Layout from "../layouts/Layout.astro";
 
 const homeLatop = "/images/home-laptop.png";
@@ -382,83 +383,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
 
     <section class="py-16">
       <div class="grid gap-16 container mx-auto lg:grid-cols-3">
-        <article>
-          <a href="#" class="grid text-center gap-3 px-5">
-            <img
-              src="/logos/media/zdnet.svg"
-              alt="Zdnet"
-              width={50}
-              height={32}
-              class="mx-auto saturate-0"
-            />
-            <p class="text-xl">
-              If you're looking for a new operating system that takes security
-              seriously… Vanilla OS might be just the ticket.
-            </p>
-          </a>
-        </article>
-        <article>
-          <a href="#" class="grid text-center gap-3 px-5">
-            <img
-              src="/logos/media/the_register.svg"
-              width={178}
-              height={32}
-              alt="The Register"
-              class="mx-auto saturate-0"
-            />
-            <p class="text-xl">
-              Vanilla OS is going for bigger, bolder improvement to the Linux
-              desktop… it could prove transformative to the Linux industry…
-            </p>
-          </a>
-        </article>
-        <article>
-          <a href="#" class="grid text-center gap-3 px-5">
-            <img
-              src="/logos/media/techrepublic-logo.svg"
-              alt="TechRepublic"
-              width={141}
-              height={32}
-              class="mx-auto saturate-0"
-            />
-            <p class="text-xl">
-              This will be a project you’ll want to keep a close watch on… I
-              think Vanilla OS could be a real game-changer.
-            </p>
-          </a>
-        </article>
-        <article>
-          <a href="#" class="grid text-center gap-3 px-5">
-            <Image
-              src="/logos/media/omg-linux.png"
-              alt="OMG! Linux"
-              width={145}
-              height={32}
-              format="webp"
-              class="mx-auto saturate-0"
-            />
-            <p class="text-xl">
-              Far more than “just another” Ubuntu fork, this distro takes a bold
-              new approach to desktop computing using an immutable file system.
-            </p>
-          </a>
-        </article>
-        <article>
-          <a href="#" class="grid text-center gap-3 px-5">
-            <Image
-              src="/logos/media/itsfoss-logo.webp"
-              alt="It's Foss"
-              width={89}
-              height={32}
-              format="webp"
-              class="mx-auto saturate-0"
-            />
-            <p class="text-xl">
-              Being a new distro, Vanilla OS has a well-equipped feature set
-              that you might like.
-            </p>
-          </a>
-        </article>
+        <Technologie />
       </div>
     </section>
   </main>
