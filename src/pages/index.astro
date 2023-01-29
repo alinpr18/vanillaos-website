@@ -2,19 +2,24 @@
 import { Image } from "@astrojs/image/components";
 import Faq from "../components/Faq.astro";
 import Layout from "../layouts/Layout.astro";
+
+const homeLatop = "/images/home-laptop.png";
+const homeRnote = "/images/home-rnote.png";
+const homeGaming = "/images/home-gaming.png";
+const homeApps = "/images/home-apps.png";
+const homePkgs = "/images/home-pkgs.png";
+const homeDeskApx = "/images/home-desk-apx.png";
 ---
 
 <Layout title="Vanilla OS">
   <main>
-    <section
-      class="grid justify-items-center gap-3 py-16 px-5 h-[calc(100vh-100px)] place-content-center"
-    >
-      <img
-        src="/images/home-laptop.svg"
-        width={660}
+    <section class="grid justify-items-center gap-3 py-16 px-5">
+      <Image
+        src={homeLatop}
+        format="webp"
+        width={650}
         height={350}
-        alt="Laptop with VanillaOS"
-        loading="lazy"
+        alt="Laptop with Vanilla OS"
       />
       <a
         href="#"
@@ -98,12 +103,12 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="/images/home-rnote.png"
+        src={homeRnote}
         width={612}
         height={425}
         alt="Rnote Flatpak App"
         format="webp"
-        class="m-auto w-full"
+        class="m-auto"
       />
     </section>
     <section
@@ -125,9 +130,9 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="/images/home-gaming.png"
-        width={612}
-        height={425}
+        src={homeGaming}
+        width={740}
+        height={577}
         alt="Games pic"
         format="webp"
         class="m-auto"
@@ -137,7 +142,7 @@ import Layout from "../layouts/Layout.astro";
       class="grid place-items-center gap-4 text-center px-5 py-16 relative"
     >
       <Image
-        src="/images/home-apps.png"
+        src={homeApps}
         format="webp"
         alt="Linux Apps"
         class="opacity-50"
@@ -171,7 +176,7 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <Image
-        src="/images/home-pkgs.png"
+        src={homePkgs}
         width={440}
         height={537}
         format="webp"
@@ -226,13 +231,13 @@ import Layout from "../layouts/Layout.astro";
           </span>
         </a>
       </div>
-      <img
-        src="/images/home-desk-apx.svg"
+      <Image
+        src={homeDeskApx}
+        format="webp"
         width={612}
         height={425}
         alt="Apx preview"
         class="m-auto"
-        loading="lazy"
       />
     </section>
     <section
@@ -295,10 +300,8 @@ import Layout from "../layouts/Layout.astro";
           Vanilla OS is made possible by the following technologies.
         </p>
         <div>
-          <ul
-            class="grid place-items-center grid-cols-2 gap-5 container mx-auto lg:grid-flow-col"
-          >
-            <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
+          <ul class="grid grid-cols-2 gap-5 container mx-auto lg:grid-flow-col">
+            <li class="p-3 hover:bg-[#f1f0ec] rounded">
               <a aria-label="Ubuntu" href="#">
                 <img
                   src="/logos/ubuntu.svg"
@@ -309,10 +312,7 @@ import Layout from "../layouts/Layout.astro";
                 />
               </a>
             </li>
-            <li
-              aria-label="Gnome"
-              class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]"
-            >
+            <li aria-label="Gnome" class="p-3 hover:bg-[#f1f0ec] rounded">
               <a href="#">
                 <img
                   src="/logos/gnome.svg"
@@ -324,7 +324,7 @@ import Layout from "../layouts/Layout.astro";
                 />
               </a>
             </li>
-            <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
+            <li class="p-3 hover:bg-[#f1f0ec] rounded">
               <a aria-label="Distrobox" href="#">
                 <Image
                   src="/logos/distrobox.png"
@@ -335,7 +335,7 @@ import Layout from "../layouts/Layout.astro";
                 />
               </a>
             </li>
-            <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
+            <li class="p-3 hover:bg-[#f1f0ec] rounded">
               <a aria-label="ABRoot" href="#">
                 <img
                   src="/logos/abroot.svg"
@@ -346,7 +346,7 @@ import Layout from "../layouts/Layout.astro";
                 />
               </a>
             </li>
-            <li class="shadow-md drop-shadow-md p-3 hover:bg-[#f1f0ec]">
+            <li class="p-3 hover:bg-[#f1f0ec] rounded">
               <a aria-label="Apx" href="#">
                 <Image
                   src="/logos/apx.png"
