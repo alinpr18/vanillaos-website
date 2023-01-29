@@ -28,7 +28,10 @@ const navbar = [
 ];
 ---
 
-<header id="header" class="py-6 transition-all top-0 sticky bg-white z-10">
+<header
+  id="header"
+  class="py-6 transition-all top-0 sticky bg-white z-10 dark:bg-[#242424]"
+>
   <div
     class="flex items-center justify-between px-5 container mx-auto transition-all"
   >
@@ -39,7 +42,7 @@ const navbar = [
         height={87}
         alt="VanillaOS logo"
         format="webp"
-        class="w-32"
+        class="w-32 dark:invert"
       />
     </a>
     <button
@@ -47,13 +50,19 @@ const navbar = [
       aria-label="menu"
       class="grid gap-[2px] justify-center w-5 h-full lg:hidden"
     >
-      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
-      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
-      <span aria-hidden="true" class="w-1 h-1 bg-black rounded-full"></span>
+      <span
+        aria-hidden="true"
+        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
+      <span
+        aria-hidden="true"
+        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
+      <span
+        aria-hidden="true"
+        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
     </button>
     <nav
       id="menu"
-      class="hidden lg:grid lg:relative transition-all lg:top-0 lg:left-0 lg:right-0 fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md lg:drop-shadow-none bg-white lg:bg-none lg:p-0"
+      class="hidden lg:grid lg:relative transition-all lg:top-0 lg:left-0 lg:right-0 fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md lg:drop-shadow-none bg-white lg:bg-none lg:p-0 dark:bg-[#242424] dark:text-white"
     >
       <ul
         class="grid lg:grid-flow-col justify-items-center gap-3 lg:gap-7 text-lg"

@@ -1,4 +1,5 @@
 ---
+import FastArrowRight from "../components/icons/FastArrowRight.astro";
 import Layout from "../layouts/Layout.astro";
 
 const articles = [
@@ -31,10 +32,10 @@ const articles = [
 
 <Layout title="Vanilla OS Blog">
   <main>
-    <section class="bg-[#F2F1ED]">
+    <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
       <div class="grid gap-4 text-center px-5 py-16">
-        <h1 class="text-5xl font-bold lg:text-7xl">Blog</h1>
-        <p class="text-xl lg:text-2xl">
+        <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">Blog</h1>
+        <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
           Check out what's happening in Vanilla OS world.
         </p>
       </div>
@@ -46,12 +47,15 @@ const articles = [
           const { title, date, content } = article;
           return (
             <div class="px-5 lg:px-0">
-              <article class="bg-[#F2F1ED] rounded-xl p-5">
-                <h2 class="text-3xl font-bold">{title}</h2>
-                <time>{date}</time>
-                <p class="text-lg my-4">{content}</p>
-                <button class="bg-black rounded-full py-3 px-6 text-white">
-                  Read more [arrow]
+              <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] rounded-xl p-5">
+                <h2 class="text-3xl font-bold dark:text-white">{title}</h2>
+                <time class="dark:text-white">{date}</time>
+                <p class="text-lg my-4 dark:text-white">{content}</p>
+                <button class="bg-black rounded-full py-3 px-6 text-white flex gap-3">
+                  Read more
+                  <span>
+                    <FastArrowRight />
+                  </span>
                 </button>
               </article>
             </div>

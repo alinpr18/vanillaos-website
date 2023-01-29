@@ -27,11 +27,15 @@ const faqs = [
     faqs.map((faq) => {
       const { question, answer, answer1 } = faq;
       return (
-        <details class="bg-slate-400 p-5 bg-[#0000000f] rounded-2xl">
-          <summary class="text-xl font-bold">{question}</summary>
+        <details class="p-5 bg-[#0000000f] dark:bg-[#0000002e] rounded-2xl">
+          <summary class="text-xl font-bold dark:text-white">
+            {question}
+          </summary>
           <div class="grid gap-4 lg:gap-10">
-            <p class="text-xl lg:text-2xl">{answer}</p>
-            {answer1 && <p class="text-xl lg:text-2xl">{answer1}</p>}
+            <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">{answer}</p>
+            {answer1 && (
+              <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">{answer1}</p>
+            )}
           </div>
         </details>
       );
