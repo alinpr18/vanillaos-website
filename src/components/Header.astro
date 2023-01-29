@@ -28,7 +28,7 @@ const navbar = [
 ];
 ---
 
-<header class="py-6 top-0 sticky bg-white z-10">
+<header id="header" class="py-6 transition-all top-0 sticky bg-white z-10">
   <div class="flex items-center justify-between px-5 container mx-auto">
     <a href="/">
       <Image
@@ -72,9 +72,21 @@ const navbar = [
 </header>
 
 <script client:load>
+  const $header = document.querySelector("#header");
   const $menuIcon = document.querySelector("#menuIcon");
   const $menu = document.querySelector("#menu");
+
   $menuIcon.addEventListener("click", () => {
     $menu.classList.toggle("hidden");
+  });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 1) {
+      $header.classList.remove("py-6");
+      $header.classList.add("py-3", "shadow-md");
+    } else if (window.scrollY === 0) {
+      $header.classList.remove("py-3", "shadow-md");
+      $header.classList.add("py-6");
+    }
   });
 </script>
