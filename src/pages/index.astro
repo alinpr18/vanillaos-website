@@ -1,6 +1,10 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Faq from "../components/Faq.astro";
+import ArrowDown from "../components/icons/ArrowDown.astro";
+import Download from "../components/icons/Download.astro";
+import FastArrowRight from "../components/icons/FastArrowRight.astro";
+import Github from "../components/icons/Github.astro";
 import Technologie from "../components/Technologie.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -28,21 +32,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       >
         Get Vanilla OS 22.10
         <span>
-          <svg
-            width="24px"
-            height="24px"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            color="currentColor"
-            ><path
-              d="M6 20h12M12 4v12m0 0l3.5-3.5M12 16l-3.5-3.5"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path></svg
-          >
+          <Download />
         </span>
       </a>
       <div>
@@ -55,21 +45,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       <a href="#" class="grid gap-3 justify-items-center text-2xl mt-[5vh]">
         What is Vanilla OS?
         <span>
-          <svg
-            width="24px"
-            height="24px"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            color="#000000"
-            ><path
-              d="M12.25 5.5V18m0 0l-6-6m6 6l6-6"
-              stroke="#000000"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path></svg
-          >
+          <ArrowDown />
         </span>
       </a>
     </section>
@@ -214,21 +190,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
           href="#"
           >Learn More
           <span>
-            <svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              color="currentColor"
-              ><path
-                d="M13 6l6 6-6 6M5 6l6 6-6 6"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path></svg
-            >
+            <FastArrowRight />
           </span>
         </a>
       </div>
@@ -262,21 +224,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       >
         Fork on
         <span>
-          <svg
-            width="24px"
-            height="24px"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            color="currentColor"
-            ><path
-              d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path></svg
-          >
+          <Github />
         </span>
         GitHub
       </a>
