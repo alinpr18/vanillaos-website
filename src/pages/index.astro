@@ -6,6 +6,7 @@ import Download from "../components/icons/Download.astro";
 import FastArrowRight from "../components/icons/FastArrowRight.astro";
 import Github from "../components/icons/Github.astro";
 import Media from "../components/Media.astro";
+import Technologie from "../components/Technologie.astro";
 import Layout from "../layouts/Layout.astro";
 
 const homeLatop = "/images/home-laptop.png";
@@ -44,9 +45,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       class="grid gap-3 justify-items-center text-2xl mt-[5vh] dark:text-white"
     >
       What is Vanilla OS?
-      <span>
-        <ArrowDown />
-      </span>
+      <ArrowDown />
     </a>
   </section>
 
@@ -240,70 +239,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
         <ul
           class="grid grid-cols-2 md:auto-cols-fr md:grid-cols-5 gap-5 container mx-auto"
         >
-          <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
-            <a aria-label="Ubuntu" href="#" class="w-32 h-14 flex items-center">
-              <img
-                src="/logos/ubuntu.svg"
-                alt="Ubuntu"
-                width={1022}
-                height={360}
-                loading="lazy"
-                class="dark:saturate-0 dark:invert"
-              />
-            </a>
-          </li>
-          <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
-            <a aria-label="Gnome" href="#" class="w-32 h-14 flex items-center">
-              <img
-                src="/logos/gnome.svg"
-                alt="Gnome"
-                width={1144}
-                height={408}
-                loading="lazy"
-                class="dark:saturate-0 dark:invert"
-              />
-            </a>
-          </li>
-          <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
-            <a
-              aria-label="Distrobox"
-              href="#"
-              class="w-32 h-14 flex items-center"
-            >
-              <Image
-                src="/logos/distrobox.png"
-                width={1800}
-                height={235}
-                format="webp"
-                alt="Distrobox"
-                class="dark:saturate-0 dark:invert"
-              />
-            </a>
-          </li>
-          <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
-            <a aria-label="ABRoot" href="#" class="w-32 h-14 flex items-center">
-              <img
-                src="/logos/abroot.svg"
-                alt="ABRoot"
-                width={1130}
-                height={534}
-                loading="lazy"
-                class="dark:saturate-0 dark:invert"
-              />
-            </a>
-          </li>
-          <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
-            <a aria-label="Apx" href="#" class="w-32 h-14 flex items-center">
-              <Image
-                src="/logos/apx.png"
-                width={663}
-                height={197}
-                format="webp"
-                alt="Apx"
-                class="dark:saturate-0 dark:invert"
-              />
-            </a>
-          </li>
+          <Technologie />
         </ul>
       </div>
       <small class="text-center dark:text-white"
