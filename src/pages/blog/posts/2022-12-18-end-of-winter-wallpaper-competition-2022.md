@@ -15,31 +15,31 @@ We received more submissions, but only 3 of them met the requirements. Here they
 
 ### 1. by 4e6anenk0
 
-| ![4e6anenk0](/assets/uploads/WWC2022/4e6anenk0-light.png) | 
+| ![4e6anenk0](/images/posts/WWC2022/4e6anenk0-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![4e6anenk0](/assets/uploads/WWC2022/4e6anenk0-dark.png) | 
+| ![4e6anenk0](/images/posts/WWC2022/4e6anenk0-dark.png) | 
 |:--:| 
 | *Dark variant* |
 
 ### 2. by conquodS
 
-| ![conquodS](/assets/uploads/WWC2022/conquodS-light.png) | 
+| ![conquodS](/images/posts/WWC2022/conquodS-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![conquodS](/assets/uploads/WWC2022/conquodS-dark.png) | 
+| ![conquodS](/images/posts/WWC2022/conquodS-dark.png) | 
 |:--:| 
 | *Dark variant* |
 
 ### 3. by kramo
 
-| ![kramo](/assets/uploads/WWC2022/kramo-light.png) | 
+| ![kramo](/images/posts/WWC2022/kramo-light.png) | 
 |:--:| 
 | *Light variant* |
 
-| ![kramo](/assets/uploads/WWC2022/kramo-dark.png) | 
+| ![kramo](/images/posts/WWC2022/kramo-dark.png) | 
 |:--:| 
 | *Dark variant* |
 

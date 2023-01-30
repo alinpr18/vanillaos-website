@@ -18,16 +18,16 @@ and so many things to say. To make it easier for you to understand this project,
 we created a commercial like the big guys do (or at least we tried). Here it 
 is below, enjoy it but then come back here, we have a lot to talk about!
 
-<!-- <div class="video">
+<div class="video">
     <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen="" frameborder="0" height="315" width="560"> </iframe>
-</div> -->
+</div>
 
 Vanilla OS is not an ordinary Linux distribution, it is a project that sets 
 itself many goals and is not afraid to put itself out there, proudly displaying 
 its unique technologies such as the Apx sub-system, its own automatic update 
 system, and ABRoot transactions.
 
-![](/assets/uploads/vanilla-os-stable-illustration.webp)
+![](/images/posts/vanilla-os-stable-illustration.webp)
 
 So many terms, so many promises, so much everything. But let's see together, in 
 detail what the strengths of Vanilla OS are, the features that make it unique.
@@ -50,7 +50,7 @@ By default, Apx provides a container based on your Linux distribution (Ubuntu
 22.10 for Vanilla OS 22.10) and wraps all commands from the distribution’s 
 package manager (apt for Ubuntu).
 
-![Apx](/assets/uploads/vanilla-os-apx.png)
+![Apx](/images/posts/vanilla-os-apx.png)
 
 Nevertheless, you can install packages from other package distributions. For 
 example, using the `--aur` flag, a new container based on Arch Linux will be 
@@ -60,7 +60,7 @@ will create a new container based on Fedora Linux. Here, apx will manage
 packages from Fedora’s DNF repository, tightly integrating them with the host 
 system.
 
-![Apx Control Center](/assets/uploads/vanilla-os-apx-control-center.png)
+![Apx Control Center](/images/posts/vanilla-os-apx-control-center.png)
 
 Graphical applications installed inside apx containers are automatically added 
 to the Applications menu as well as the “Open with” menu in the file manager. 
@@ -97,7 +97,7 @@ We designed this system to take away an annoying task from the user, who
 simply wants to do their own thing. Updates go through ABRoot transactions and 
 are applied on the next reboot, without taking extra time during boot.
 
-![VSO Control Center](/assets/uploads/vanilla-os-updates.png)
+![VSO Control Center](/images/posts/vanilla-os-updates.png)
 
 From the Vanilla Control Center, it is possible to set the update frequency, 
 check when the last one was performed, and turn off Smart Update features.
@@ -111,7 +111,7 @@ After the first boot, you will be prompted to complete the installation through
 a guided process. Here you will be able to make several choices, such as for 
 Dark Mode, Flatpak, AppImage, NVIDIA drivers, and more.
 
-![First Setup](/assets/uploads/vanilla-os-first-setup.png)
+![First Setup](/images/posts/vanilla-os-first-setup.png)
 
 The process is designed to be fast and as minimally invasive as possible. Once 
 complete, you will need to reboot to be able to use your device with Vanilla OS!
@@ -125,7 +125,7 @@ ever.
 We chose to provide GNOME because of its uniqueness and ease of use, which make 
 it the perfect companion to Vanilla OS.
 
-![GNOME 43](/assets/uploads/vanilla-os-gnome.png)
+![GNOME 43](/images/posts/vanilla-os-gnome.png)
 
 All official Vanilla OS applications are built with GTK4 and Libadwaita to be 
 as consistent as possible with the GNOME experience.
@@ -136,7 +136,7 @@ Vanilla OS comes with a set of official wallpapers, designed by our team and
 community. They are available in high resolution and are designed to best fit
 with the system.
 
-![Wallpapers](/assets/uploads/vanilla-os-backgrounds.png)
+![Wallpapers](/images/posts/vanilla-os-backgrounds.png)
 
 Every wallpaper has a light and a dark version, so you can choose the one that
 best suits your needs.

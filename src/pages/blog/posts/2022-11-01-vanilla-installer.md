@@ -45,19 +45,19 @@ The **Welcome** screen allows the user to choose between live mode and
 installation mode. The live mode is used to test the system without installing 
 it, while the installation mode is used to install the system on the device.
 
-![Welcome - Vanilla Installer](/assets/uploads/installer-welcome.png)
+![Welcome - Vanilla Installer](/images/posts/installer-welcome.png)
 
 Once the user has chosen the installation mode, the **Language** screen is shown. 
 In this screen, it is possible to choose the language in which Vanilla OS will be
 installed. Here a search bar is available to quickly find the language.
 
-![Language - Vanilla Installer](/assets/uploads/installer-language.png)
+![Language - Vanilla Installer](/images/posts/installer-language.png)
 
 The **Keyboard** screen allows the user to choose the keyboard layout that will 
 be used in the system. As for the language, a search bar is available to 
 quickly find the keyboard layout, plus a test area to test the keyboard layout.
 
-![Keyboard - Vanilla Installer](/assets/uploads/installer-keyboard.png)
+![Keyboard - Vanilla Installer](/images/posts/installer-keyboard.png)
 
 The **Timezone** screen allows the user to choose the timezone in which the system
 will be installed. The timezone is automatically set to the one detected by the
@@ -65,11 +65,11 @@ system, but it is possible to change it to another one. Once a region is
 selected, the zones are automatically filtered. Other than the usual search bar,
 a preview of the current time is available to quickly test the timezone.
 
-![Timezone - Vanilla Installer](/assets/uploads/installer-timezone.png)
+![Timezone - Vanilla Installer](/images/posts/installer-timezone.png)
 
 The **Partitioning** screen allows the user to choose where to install the system.
 
-![Partitioning - Vanilla Installer](/assets/uploads/installer-partitioning.png)
+![Partitioning - Vanilla Installer](/images/posts/installer-partitioning.png)
 
 Once a disk is selected, it is possible to choose between automatic or manual
 partitioning. In automatic partitioning, the disk is automatically partitioned
@@ -83,28 +83,28 @@ It is also possible to launch the GParted utility to manually partition the
 disk.
 
 <div class="grid-images">
-  <img src="/assets/uploads/installer-partitioning-1.png" alt=" Auto Partitioning - Vanilla Installer">
-  <img src="/assets/uploads/installer-partitioning-2.png" alt=" Manual Partitioning - Vanilla Installer">
-  <img src="/assets/uploads/installer-partitioning-3.png" alt=" Confirm Partitioning - Vanilla Installer">
+  <img src="/images/posts/installer-partitioning-1.png" alt=" Auto Partitioning - Vanilla Installer">
+  <img src="/images/posts/installer-partitioning-2.png" alt=" Manual Partitioning - Vanilla Installer">
+  <img src="/images/posts/installer-partitioning-3.png" alt=" Confirm Partitioning - Vanilla Installer">
 </div>
 
 The **User** screen allows the user to set up the user account that will be created
 in the system. It is possible to choose the Name, Username and Password. Plus
 a preview of the Adwaita avatar is shown.
 
-![User - Vanilla Installer](/assets/uploads/installer-user.png)
+![User - Vanilla Installer](/images/posts/installer-user.png)
 
 Before starting the installation, a summary of the installation is shown, so
 the user can check if everything is correct before proceeding.
 
-![Installation - Vanilla Installer](/assets/uploads/installer-confirm.png)
+![Installation - Vanilla Installer](/images/posts/installer-confirm.png)
 
 Finally, the **Installation** screen shows the progress of the installation. Here
 we placed a tour of the system to show the user what to expect after the
 installation. It is also possible to toggle the console to see the installation
 logs.
 
-![Installation - Vanilla Installer](/assets/uploads/installer-installation.png)
+![Installation - Vanilla Installer](/images/posts/installer-installation.png)
 
 ## Testing the new installer
 The new installer is not yet available in the open beta images, but it is
