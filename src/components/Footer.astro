@@ -97,9 +97,7 @@ const footerAreas = [
       <div class="grid gap-3">
         <p>
           Vanilla OS is a Free and Open Source project.
-          <a class="border-b border-dotted border-[#282828]" href="#"
-            >Learn here</a
-          >
+          <a class="link" href="#">Learn here</a>
           how to get involved.
         </p>
         <p>
@@ -124,10 +122,7 @@ const footerAreas = [
                   const { name, url } = content;
                   return (
                     <li>
-                      <a
-                        class="border-b border-dotted border-[#282828]"
-                        href={url}
-                      >
+                      <a class="link" href={url}>
                         {name}
                       </a>
                     </li>
@@ -141,7 +136,13 @@ const footerAreas = [
     </section>
     <small class="text-center dark:text-white">
       Copyrigth © {year}
-      <a href="#">fabricators.ltd</a>
+      <a href="#" class="link">fabricators.ltd</a>
     </small>
   </div>
 </footer>
+
+<style>
+  .link {
+    @apply text-[#282828] border-[#282828] border-b border-dotted dark:text-white dark:border-white;
+  }
+</style>

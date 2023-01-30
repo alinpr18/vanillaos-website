@@ -6,19 +6,18 @@ const posts = await Astro.glob("./posts/*.md");
 ---
 
 <Layout title="Vanilla OS Blog">
-  <main>
-    <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
-      <div class="grid gap-4 text-center px-5 py-16">
-        <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">Blog</h1>
-        <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
-          Check out what's happening in Vanilla OS world.
-        </p>
-      </div>
-    </section>
-
-    <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
-      {
-        posts.map((article) => {
+  <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
+    <div class="grid gap-4 text-center px-5 py-16">
+      <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">Blog</h1>
+      <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
+        Check out what's happening in Vanilla OS world.
+      </p>
+    </div>
+  </section>
+  <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
+    {
+      posts
+        .map((article) => {
           const { url, frontmatter } = article;
           return (
             <div class="px-5 grid lg:px-0">
@@ -43,16 +42,14 @@ const posts = await Astro.glob("./posts/*.md");
                     class="bg-black rounded-full py-3 px-6 text-white flex gap-3 w-fit"
                   >
                     Read more
-                    <span>
-                      <FastArrowRight />
-                    </span>
+                    <FastArrowRight />
                   </a>
                 </div>
               </article>
             </div>
           );
         })
-      }
-    </section>
-  </main>
+        .reverse()
+    }
+  </section>
 </Layout>
