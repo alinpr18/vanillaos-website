@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
 const cards = [
   {
@@ -42,35 +42,33 @@ const cards = [
 ---
 
 <Layout title="Vanilla OS Get Involved">
-  <main>
-    <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
-      <div class="grid gap-4 text-center px-5 py-16">
-        <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">
-          Get Involved with Vanilla OS
-        </h1>
-        <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
-          Everythin we do is Open Source. you can contribute in many ways.
-        </p>
-      </div>
-    </section>
+  <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
+    <div class="grid gap-4 text-center px-5 py-16">
+      <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">
+        Get Involved with Vanilla OS
+      </h1>
+      <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
+        Everythin we do is Open Source. you can contribute in many ways.
+      </p>
+    </div>
+  </section>
 
-    <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
-      {
-        cards.map((card) => {
-          const { title, content, link } = card;
-          return (
-            <div class="px-5 lg:px-0 grid">
-              <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] grid justify-items-center text-center rounded-xl p-5 ">
-                <h2 class="text-3xl font-bold dark:text-white">{title}</h2>
-                <p class="text-lg my-4 dark:text-white">{content}</p>
-                <button class="bg-black rounded-full py-3 px-6 text-white">
-                  {link}
-                </button>
-              </article>
-            </div>
-          );
-        })
-      }
-    </section>
-  </main>
+  <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
+    {
+      cards.map((card) => {
+        const { title, content, link } = card;
+        return (
+          <div class="px-5 lg:px-0 grid">
+            <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] grid justify-items-center text-center rounded-xl p-5 ">
+              <h2 class="text-3xl font-bold dark:text-white">{title}</h2>
+              <p class="text-lg my-4 dark:text-white">{content}</p>
+              <button class="bg-black rounded-full py-3 px-6 text-white">
+                {link}
+              </button>
+            </article>
+          </div>
+        );
+      })
+    }
+  </section>
 </Layout>

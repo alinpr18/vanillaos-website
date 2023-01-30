@@ -1,7 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 
-const technologies = [
+const media = [
   {
     img: "/logos/media/zdnet.png",
     name: "Zdnet",
@@ -46,7 +46,7 @@ const technologies = [
 ---
 
 {
-  technologies.map((tech) => {
+  media.map((tech) => {
     const { img, name, width, height, content } = tech;
     return (
       <article class="max-w-sm">

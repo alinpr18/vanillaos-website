@@ -1,6 +1,81 @@
 ---
 import { Image } from "@astrojs/image/components";
 const year = new Date().getFullYear();
+
+const footerAreas = [
+  {
+    name: "Legal",
+    content: [
+      {
+        name: "Cookies",
+        url: "#",
+      },
+      {
+        name: "Logos",
+        url: "#",
+      },
+      {
+        name: "Funding",
+        url: "#",
+      },
+    ],
+  },
+  {
+    name: "Community",
+    content: [
+      {
+        name: "Our Community",
+        url: "#",
+      },
+      {
+        name: "Code of Conduct",
+        url: "#",
+      },
+      {
+        name: "Get Involved",
+        url: "#",
+      },
+    ],
+  },
+  {
+    name: "Support",
+    content: [
+      {
+        name: "Docummentation",
+        url: "#",
+      },
+      {
+        name: "Community Support",
+        url: "#",
+      },
+      {
+        name: "Source Code",
+        url: "#",
+      },
+    ],
+  },
+  {
+    name: "Follow us",
+    content: [
+      {
+        name: "Discord",
+        url: "#",
+      },
+      {
+        name: "Mastodon",
+        url: "#",
+      },
+      {
+        name: "Twitter",
+        url: "#",
+      },
+      {
+        name: "RSS",
+        url: "#",
+      },
+    ],
+  },
+];
 ---
 
 <footer>
@@ -38,85 +113,31 @@ const year = new Date().getFullYear();
   </div>
   <div class="bg-[#e4e3df] dark:bg-[#181818] py-16 grid gap-10">
     <section class="grid lg:grid-cols-4 container mx-auto gap-3 px-5">
-      <div class="grid gap-5 py-2 dark:text-white">
-        <h2 class="text-xl font-bold">Legal</h2>
-        <ul class="grid gap-1">
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Cookies</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#">Logos</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Funding</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="grid gap-5 py-2 dark:text-white">
-        <h2 class="text-xl font-bold">Community</h2>
-        <ul class="grid gap-1">
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Our Community</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Code of Conduct</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Get involved</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="grid gap-5 py-2 dark:text-white">
-        <h2 class="text-xl font-bold">Social</h2>
-        <ul class="grid gap-1">
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Discord</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Mastodon</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="grid gap-5 py-2 dark:text-white">
-        <h2 class="text-xl font-bold">Support</h2>
-        <ul class="grid gap-1">
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Docummentation</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Community Support</a
-            >
-          </li>
-          <li>
-            <a class="border-b border-dotted border-[#282828]" href="#"
-              >Source Code</a
-            >
-          </li>
-        </ul>
-      </div>
+      {
+        footerAreas.map((area) => {
+          const { name, content } = area;
+          return (
+            <div class="grid gap-5 py-2 dark:text-white">
+              <h2 class="text-xl font-bold">{name}</h2>
+              <ul class="grid gap-1">
+                {content.map((content) => {
+                  const { name, url } = content;
+                  return (
+                    <li>
+                      <a
+                        class="border-b border-dotted border-[#282828]"
+                        href={url}
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })
+      }
     </section>
     <small class="text-center dark:text-white">
       Copyrigth © {year}

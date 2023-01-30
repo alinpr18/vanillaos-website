@@ -3,27 +3,27 @@ import { Image } from "@astrojs/image/components";
 const navbar = [
   {
     title: "Blog",
-    href: "/blog",
+    url: "/blog",
   },
   {
     title: "FAQ",
-    href: "/faq",
+    url: "/faq",
   },
   {
     title: "Community",
-    href: "#",
+    url: "#",
   },
   {
     title: "Documentation",
-    href: "#",
+    url: "#",
   },
   {
     title: "Handbook",
-    href: "#",
+    url: "#",
   },
   {
     title: "Get Involved",
-    href: "/get-involved",
+    url: "/get-involved",
   },
 ];
 ---
@@ -69,10 +69,10 @@ const navbar = [
       >
         {
           navbar.map((page) => {
-            const { title, href } = page;
+            const { title, url } = page;
             return (
               <li>
-                <a href={href}>{title}</a>
+                <a href={url}>{title}</a>
               </li>
             );
           })
