@@ -22,25 +22,32 @@ const posts = await Astro.glob("./posts/*.md");
           const { url, frontmatter } = article;
           return (
             <div class="px-5 grid lg:px-0">
-              <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] rounded-xl p-5 ">
-                <h2 class="text-3xl font-bold dark:text-white">
-                  {frontmatter.title}
-                </h2>
-                <time datetime={frontmatter.published} class="dark:text-white">
-                  {frontmatter.published}
-                </time>
-                <p class="text-lg my-4 dark:text-white">
-                  {frontmatter.description}
-                </p>
-                <a
-                  href={url}
-                  class="bg-black rounded-full py-3 px-6 text-white flex gap-3 w-fit justify-end"
-                >
-                  Read more
-                  <span>
-                    <FastArrowRight />
-                  </span>
-                </a>
+              <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] rounded-xl p-5 flex flex-col">
+                <div class="flex-1">
+                  <h2 class="text-3xl font-bold dark:text-white">
+                    {frontmatter.title}
+                  </h2>
+                  <time
+                    datetime={frontmatter.published}
+                    class="dark:text-white"
+                  >
+                    {frontmatter.published}
+                  </time>
+                  <p class="text-lg my-4 dark:text-white">
+                    {frontmatter.description}
+                  </p>
+                </div>
+                <div class="flex justify-end">
+                  <a
+                    href={url}
+                    class="bg-black rounded-full py-3 px-6 text-white flex gap-3 w-fit"
+                  >
+                    Read more
+                    <span>
+                      <FastArrowRight />
+                    </span>
+                  </a>
+                </div>
               </article>
             </div>
           );
