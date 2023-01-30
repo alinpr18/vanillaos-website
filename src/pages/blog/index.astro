@@ -1,0 +1,51 @@
+---
+import FastArrowRight from "../../components/icons/FastArrowRight.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await Astro.glob("./posts/*.md");
+---
+
+<Layout title="Vanilla OS Blog">
+  <main>
+    <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
+      <div class="grid gap-4 text-center px-5 py-16">
+        <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">Blog</h1>
+        <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
+          Check out what's happening in Vanilla OS world.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
+      {
+        posts.map((article) => {
+          const { url, frontmatter } = article;
+          return (
+            <div class="px-5 grid lg:px-0">
+              <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] rounded-xl p-5 ">
+                <h2 class="text-3xl font-bold dark:text-white">
+                  {frontmatter.title}
+                </h2>
+                <time datetime={frontmatter.published} class="dark:text-white">
+                  {frontmatter.published}
+                </time>
+                <p class="text-lg my-4 dark:text-white">
+                  {frontmatter.description}
+                </p>
+                <a
+                  href={url}
+                  class="bg-black rounded-full py-3 px-6 text-white flex gap-3 w-fit justify-end"
+                >
+                  Read more
+                  <span>
+                    <FastArrowRight />
+                  </span>
+                </a>
+              </article>
+            </div>
+          );
+        })
+      }
+    </section>
+  </main>
+</Layout>
