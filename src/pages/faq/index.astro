@@ -1,18 +1,14 @@
 ---
 import Faq from "../../components/Faq.astro";
-import Layout from "../../layouts/Layout.astro";
+import LayoutPage from "../../layouts/LayoutPage.astro";
 ---
 
-<Layout title="Vanilla OS FAQ">
-  <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
-    <div class="grid gap-4 text-center px-5 py-16">
-      <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">FAQ</h1>
-      <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
-        Frequently Answred Asked Questions about Vanilla OS.
-      </p>
-    </div>
-  </section>
+<LayoutPage
+  title="Vanilla OS FAQ"
+  name="FAQ"
+  description="Frequently Answred Asked Questions about Vanilla OS."
+>
   <section class="py-16 px-5 grid gap-5 container mx-auto">
     <Faq />
   </section>
-</Layout>
+</LayoutPage>

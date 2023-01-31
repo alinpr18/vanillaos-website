@@ -248,7 +248,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
 
   <section class="py-16">
     <div
-      class="grid gap-16 container justify-center mx-auto md:grid-cols-2 lg:grid-cols-3"
+      class="grid gap-16 container mx-auto grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] justify-items-center"
     >
       <Media />
     </div>
@@ -256,6 +256,9 @@ const homeDeskApx = "/images/home-desk-apx.png";
 </Layout>
 
 <style>
+  html {
+    @apply dark:bg-[#242424];
+  }
   .h2 {
     @apply text-5xl font-bold lg:text-7xl dark:text-white;
   }
