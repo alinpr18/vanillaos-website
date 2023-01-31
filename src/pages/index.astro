@@ -58,7 +58,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       sacrificing security and functionality.
     </p>
   </section>
-  <section class="feature-card">
+  <section class="feature-card desktop">
     <div class="grid gap-4 lg:text-start">
       <h2 class="h2">Work.</h2>
       <p>Your faithful colleague by day.</p>
@@ -83,7 +83,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       class="m-auto"
     />
   </section>
-  <section class="feature-card">
+  <section class="feature-card desktop">
     <div class="grid gap-4 lg:text-start lg:order-1">
       <h2 class="h2">Play.</h2>
       <p>Your teammate by night.</p>
@@ -125,7 +125,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       </div>
     </div>
   </section>
-  <section class="feature-card">
+  <section class="feature-card desktop">
     <div class="grid gap-4 lg:text-start">
       <h2 class="h2">Choice.</h2>
       <p>Your system, your choices.</p>
@@ -149,7 +149,7 @@ const homeDeskApx = "/images/home-desk-apx.png";
       class="m-auto"
     />
   </section>
-  <section class="feature-card">
+  <section class="feature-card desktop">
     <div class="grid gap-4 lg:text-start lg:order-1">
       <h2 class="h2">Immutable...</h2>
       <p>..but also not.</p>
@@ -270,5 +270,9 @@ const homeDeskApx = "/images/home-desk-apx.png";
 
   .feature-card {
     @apply grid gap-4 text-center px-5 py-16 container mx-auto;
+  }
+
+  .feature-card.desktop {
+    @apply lg:grid-cols-2 lg:items-start;
   }
 </style>
