@@ -100,7 +100,12 @@ const navbar = [
         "dark:bg-[#242424]"
       );
     } else if (window.scrollY === 0) {
-      $header.classList.remove("py-3", "shadow-md", "dark:bg-[#242424]");
+      $header.classList.remove(
+        "py-3",
+        "shadow-md",
+        "dark:bg-[#242424]",
+        "bg-white"
+      );
       $header.classList.add("py-6", "bg-transparent");
     }
   });
