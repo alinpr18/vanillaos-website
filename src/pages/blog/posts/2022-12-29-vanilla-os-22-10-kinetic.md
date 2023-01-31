@@ -19,7 +19,7 @@ we created a commercial like the big guys do (or at least we tried). Here it
 is below, enjoy it but then come back here, we have a lot to talk about!
 
 <div class="video">
-    <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen="" frameborder="0" height="315" width="560"> </iframe>
+    <iframe src="https://www.youtube.com/embed/aDvIJ_Hu90Y?controls=0" allowfullscreen frameborder="0" height="315" width="560"> </iframe>
 </div>
 
 Vanilla OS is not an ordinary Linux distribution, it is a project that sets 

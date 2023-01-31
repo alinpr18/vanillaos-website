@@ -72,7 +72,9 @@ const navbar = [
             const { title, url } = page;
             return (
               <li>
-                <a href={url}>{title}</a>
+                <a class="hover:font-semibold transition-all" href={url}>
+                  {title}
+                </a>
               </li>
             );
           })

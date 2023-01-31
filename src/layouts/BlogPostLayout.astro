@@ -48,7 +48,25 @@ const { frontmatter } = Astro.props;
   .blog-content a {
     @apply text-[#282828] border-[#282828] border-b border-dotted dark:text-white dark:border-white;
   }
+
   .blog-content .video {
-    @apply mx-auto;
+    @apply relative pb-[56.25%]  h-0;
+  }
+
+  .blog-content .video iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+
+  .blog-content ul li {
+    @apply dark:text-white;
+  }
+
+  .blog-content em,
+  .blog-content h3 {
+    @apply dark:text-white;
+  }
+
+  .blog-content .grid-images {
+    @apply grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))];
   }
 </style>
